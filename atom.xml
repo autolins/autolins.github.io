@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://autolins.github.io</id>
     <title>Lin&apos;s blog</title>
-    <updated>2021-10-18T10:32:23.418Z</updated>
+    <updated>2021-10-18T10:51:20.493Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://autolins.github.io"/>
     <link rel="self" href="https://autolins.github.io/atom.xml"/>
@@ -11,35 +11,38 @@
     <icon>https://autolins.github.io/favicon.ico</icon>
     <rights>All rights reserved 2021, Lin&apos;s blog</rights>
     <entry>
-        <title type="html"><![CDATA[Git page + Gridea 搭建个人博客记录]]></title>
+        <title type="html"><![CDATA[GitPage + Gridea 搭建个人博客记录]]></title>
         <id>https://autolins.github.io/post/git-page-gridea-da-jian-ge-ren-bo-ke-ji-lu/</id>
         <link href="https://autolins.github.io/post/git-page-gridea-da-jian-ge-ren-bo-ke-ji-lu/">
         </link>
         <updated>2021-10-18T09:41:08.000Z</updated>
-        <content type="html"><![CDATA[<h2 id="0-环境准备">0. 环境准备</h2>
+        <summary type="html"><![CDATA[<p>本文记录了如何使用GitPage和开源博客框架Gridea来搭建简易个人博客的方法，实验参考Gridea官方文档，实验过程供新手朋友参考。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>本文记录了如何使用GitPage和开源博客框架Gridea来搭建简易个人博客的方法，实验参考Gridea官方文档，实验过程供新手朋友参考。</p>
+<!-- more -->
+<h2 id="0-环境准备">0. 环境准备</h2>
 <ol>
 <li>Git安装</li>
 <li>Gridea安装</li>
 </ol>
-<p><a href="http://127.0.0.1:36677/upload%EF%BC%89">http://127.0.0.1:36677/upload</a></p>
 <h2 id="1-官方文档">１. 官方文档</h2>
 <p><a href="https://gridea.dev/gridea-start/">🤗 快速上手 | Gridea</a></p>
 <h2 id="2实验记录">2.实验记录</h2>
 <h3 id="2-1-创建一个仓库token">2-1. 创建一个仓库Token</h3>
 <p>进入Github，进入<strong>Settings/ Developer settings/Personal access tokens</strong> ，点击<strong>Generate new token</strong>。</p>
 <figure data-type="image" tabindex="1"><img src="https://pico-blogimage1-1303850390.cos.ap-guangzhou.myqcloud.com/pico-blogimage/20211018183030.png" alt="" loading="lazy"></figure>
-<p>在<strong>New personal access token</strong>中，勾选repo的所有权限，最好给这个Token批注用途信息，生成后务必记录下来，一旦网页关闭将无法再次查看此Token。</p>
+<p>在<strong>New personal access token</strong>中，<strong>勾选repo的所有权限</strong>，最好给这个Token批注用途信息，生成后务必记录下来，<span style="border-bottom:2px solid red; font-weight: bold;">一旦网页关闭将无法再次查看此Token</span>。</p>
 <figure data-type="image" tabindex="2"><img src="https://pico-blogimage1-1303850390.cos.ap-guangzhou.myqcloud.com/pico-blogimage/Pasted%20image%2020211018163705.png" alt="" loading="lazy"></figure>
 <figure data-type="image" tabindex="3"><img src="https://pico-blogimage1-1303850390.cos.ap-guangzhou.myqcloud.com/pico-blogimage/Pasted%20image%2020211018163950.png" alt="" loading="lazy"></figure>
 <h3 id="2-2-创建一个仓库存放网站文件">2-2. 创建一个仓库，存放网站文件</h3>
-<p>创建一个<strong>公开</strong>仓库，名为<strong>GitHub用户名.github.io</strong>。</p>
+<p>创建一个<strong>公开</strong>仓库，名为<code>GitHub用户名.github.io</code>。</p>
 <figure data-type="image" tabindex="4"><img src="https://pico-blogimage1-1303850390.cos.ap-guangzhou.myqcloud.com/pico-blogimage/Pasted%20image%2020211018164910.png" alt="" loading="lazy"></figure>
 <blockquote>
 <p><strong>如何查看GitHub用户名？</strong><br>
 登录GitHub，Settings/Account/Change username。</p>
 </blockquote>
 <h3 id="2-3-gridea远程设置">2-3. Gridea远程设置</h3>
-<p>进入Gridea，点击远程设置，根据步骤2-2的仓库名称和GitHub用户名称和步骤2-1的Token完成配置即可</p>
+<p>进入Gridea，点击<strong>远程设置</strong>，根据步骤2-2的仓库名称和GitHub用户名称和步骤2-1的Token完成配置即可</p>
 <blockquote>
 <p>分支：默认填写master<br>
 域名：如果没有购买域名的话，填写步骤2-2的仓库名称即可</p>
@@ -54,7 +57,7 @@
 <img src="https://pico-blogimage1-1303850390.cos.ap-guangzhou.myqcloud.com/pico-blogimage/Pasted%20image%2020211018165904.png" alt="" loading="lazy"></p>
 <p>同步成功后，在浏览器输入域名，即可看到初步搭建的博客效果，<br>
 <img src="https://pico-blogimage1-1303850390.cos.ap-guangzhou.myqcloud.com/pico-blogimage/Pasted%20image%2020211018170045.png" alt="" loading="lazy"></p>
-<p>同样的，回到步骤2-2在GitHub创建的仓库，也可以发现该仓库也多了许多网站的文件。<br>
+<p>对应的，回到步骤2-2在GitHub创建的仓库，也可以发现该仓库也多了许多网站的文件。<br>
 <img src="https://pico-blogimage1-1303850390.cos.ap-guangzhou.myqcloud.com/pico-blogimage/20211018182802.png" alt="" loading="lazy"></p>
 <p><strong>至此，使用Gridea搭建博客的实验圆满成功~</strong></p>
 ]]></content>
